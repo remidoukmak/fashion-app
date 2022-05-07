@@ -4,7 +4,7 @@
   margin: 0;
 }
 .nav-header {
-  background-color: pink;
+  background-color: rgb(223, 213, 215);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -29,4 +29,8 @@
   padding: 10px;
   color: rgb(35, 13, 163);
   width: 100px;
+}
+
+#nav-image {
+  height: 3.5rem;
 }

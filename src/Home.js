@@ -1,13 +1,21 @@
 import React from "react";
-// import Home from "./Home.css";
-
-const headerImage = new URL(import.meta.url);
-
+import "./Home.css";
+import { Carousel } from "./Component/Carousel";
 export const Home = () => {
   return (
-    <div class="carousel">
-      <img class="carousel-image" src={headerImage} />
-      <div class="carousel-cell">text here</div>
+    <div>
+      <Carousel />
+      <div id="middle-div">Loading .....</div>
     </div>
+
+    // <div class="carousel">
+    //   {/* <img class="carousel-image" src={headerImage} /> */}
+    //   <div class="fill">
+    //     <img src="https://picsum.photos/id/237/320/240" alt="" />
+    //   </div>
+    //   <div class="carousel-cell">text here</div>
+    //   <div class="carousel-cell">text here</div>
+    //   <div class="carousel-cell">text here</div>
+    // </div>
   );
 };
