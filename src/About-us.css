@@ -1,0 +1,54 @@
+.page-wrapper {
+  position: relative;
+  /* overflow-x: hidden; */
+  /* max-width: 100%; */
+  justify-content: center;
+  margin-left: 150px;
+  margin-right: 150px;
+  background-color: transparent;
+  display: inline-block;
+  width: 400%;
+  font-size: 20px;
+}
+
+/* .first-section .second-section {
+  font-size: 50px; */
+/* align-content: center; */
+/* text-align: justify;
+background-color: rgba(0,0,0,0);
+  width: 100%;
+} */
+
+.title {
+  font-weight: bold;
+  font-size: 20px;
+  background-color: transparent;
+}
+
+p {
+  background-color: transparent;
+  font-size: 10px;
+  /* margin-bottom: 5px; */
+}
+
+/* .body-image {
+  display: flex;
+  max-width: 100%;
+  margin: auto;
+  float: none;
+  background-image: url("https://interview-assessment.api.avamae.co.uk/Images/swiper_image_2.jpg");
+} */
+
+h1 {
+  font-weight: bold;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+ul {
+  font-size: 12px;
+  margin-left: 25px;
+  /* margin-top: 10px; */
+  list-style-type: circle;
+  font-weight: bold;
+}
