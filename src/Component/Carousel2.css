@@ -5,6 +5,7 @@
   /* display: inline; */
   justify-content: center;
   background-color: black;
+  background-repeat: no-repeat;
 }
 .carouselInner {
   height: 100%;
@@ -47,7 +48,7 @@ align-content: flex-start;
 .box {
   inline-size: 300px;
   overflow-wrap: break-word;
-  background-color: black;
+  background-color: rgb(65, 39, 39);
 }
 .button-title {
   background-color: #0da2ff;
@@ -106,8 +107,38 @@ p {
 .caption {
   text-align: left;
   text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  margin-left: 10px;
 }
 
+.caption-text {
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  margin-left: 10px;
+}
+
+.caption-list-style {
+  /* display: block;
+  margin-left: 10px;
+  display: inline-block;
+  width: 100%; */
+
+  font-size: 12px;
+  margin-left: 25px;
+  background-color: gray;
+  list-style-type: circle;
+  font-weight: bold;
+  /* margin-left: 130px; */
+  /* display: inline-flex; */
+}
+
+/* .caption-list {
+  list-style: circle;
+} */
+/* 
 @media (min-width: 640px) {
   body {
     font-size: 1rem;
@@ -122,4 +153,4 @@ p {
   body {
     font-size: 1.5rem;
   }
-}
+} */

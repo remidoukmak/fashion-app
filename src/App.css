@@ -30,6 +30,7 @@
   padding: 10px;
   color: rgb(35, 13, 163);
   width: 100px;
+  border: white;
 }
 @media (min-width: 640px) {
   body {

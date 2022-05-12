@@ -9,18 +9,20 @@ export const Home = () => {
       <div id="section">
         <ul>
           <li>
-            <a href="#" className="caption">
-              Why do we use it? It is a long established fact that a reader will
-              be distracted by the readable content of a page when looking at
-              its layout. The point of using Lorem Ipsum is that it has a
-              more-or-less normal distribution of letters, as opposed to using
-              'Content here, content here', making it look like readable
-              English. Many desktop publishing packages and web page editors now
-              use Lorem Ipsum as their default model text, and a search for
-              'lorem ipsum' will uncover many web sites still in their infancy.
-              Various versions have evolved over the years, sometimes by
-              accident, sometimes on purpose (injected humour and the like).
-            </a>
+            <h1 className="caption">Why do we use it?</h1>
+            <p className="caption-text">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. The
+              point of using Lorem Ipsum is that it has a more-or-less normal
+              distribution of letters, as opposed to using 'Content here,
+              content here', making it look like readable English.
+            </p>
+            <ul className="caption-list-style">
+              <li className="caption-list">Hello</li>
+              <li className="caption-list">Many desktop publishing packages</li>
+              <li className="caption-list">web page editors now use</li>
+              <li className="caption-list">Lorem Ipsum</li>
+            </ul>
             <div>
               <button className="button-title">Learn more</button>
             </div>
