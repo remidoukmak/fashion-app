@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
 }
+
 .nav-header {
   background-color: #ffffff;
   display: flex;
@@ -29,4 +30,19 @@
   padding: 10px;
   color: rgb(35, 13, 163);
   width: 100px;
+}
+@media (min-width: 640px) {
+  body {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 960px) {
+  body {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1100px) {
+  body {
+    font-size: 1.5rem;
+  }
 }

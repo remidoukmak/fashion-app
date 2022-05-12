@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -40,7 +41,7 @@
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(231, 220, 220, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -88,6 +89,81 @@
 #middle-div {
   color: black;
 }
+/* .main{
+  width:100%;
+  height:100%;
+  background-color:yellow;
+  display:flex;
+  justify-content: center;
+} */
+#section ul {
+  width: 100%;
+  max-width: 1050px;
+  margin: 1px auto 0 auto;
+  height: 50px;
+  padding: 0;
+  /* float:relative*/
+  /* NO Such Property */
+  /* border-style: solid;
+  border-width: 1px; */
+  display: table;
+  text-align: center;
+}
+#section ul li {
+  list-style-type: none;
+  display: table-cell;
+  /* border-style: solid;
+  border-width: 1px; */
+  vertical-align: middle;
+}
+#section ul li a {
+  margin: 20px;
+  display: block;
+}
+
+#carousel-img {
+  height: 350px;
+}
+.carousel-static {
+  width: 100%;
+  height: 450px;
+  /* margin-bottom: 10rem; */
+  /* display: inline; */
+  justify-content: center;
+  background-color: black;
+}
+.carousel-static-inner {
+  /* Make the width of box same as image */
+
+  height: 100%;
+  width: 100%;
+  background-image: url("https://interview-assessment.api.avamae.co.uk/Images/swiper_image_3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+}
+.carousel-img {
+  height: 350px;
+}
+.container {
+  position: relative;
+}
+.para {
+  inline-size: 300px;
+  overflow-wrap: break-word;
+}
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 @keyframes fade {
   from {
     opacity: 0.4;
@@ -96,3 +172,7 @@
     opacity: 1;
   }
 }
+
+@media (min-width: 640px) { body {font-size:1rem;} }
+@media (min-width:960px) { body {font-size:1.2rem;} }
+@media (min-width:1100px) { body {font-size:1.5rem;} }
