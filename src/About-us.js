@@ -31,7 +31,7 @@ export const AboutUs = () => {
         mollit anim id est laborum."
       </p>
       <div>
-        <image
+        <img
           className="body-image"
           src="https://interview-assessment.api.avamae.co.uk/Images/swiper_image_2.jpg"
           alt="lounge"
@@ -52,10 +52,10 @@ export const AboutUs = () => {
         quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
         voluptas nulla pariatur?"
       </p>
-      <h1>
+      <p id="list-title">
         At vero eos et accusamus et iusto odio dignissimos ducimus qui
         blanditiis praesentium:
-      </h1>
+      </p>
       <ul>
         <li>
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem ab illo

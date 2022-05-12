@@ -11,7 +11,7 @@ export const ContactUs = () => {
       <div id="items-container">
         <form class="my-form">
           <div class="container">
-            <h1>Get in touch!</h1>
+            <h1>Contact us</h1>
             <ul>
               <li>
                 {/* <select>
@@ -24,17 +24,17 @@ export const ContactUs = () => {
               <li>
                 <div className="grid grid-2">
                   <label>Full name</label>
-                  <label>Email Address </label>
+                  <label>Email address </label>
                 </div>
                 <div class="grid grid-2">
-                  <input type="text" placeholder="Name" required />
-                  <input type="email" placeholder="email" required />
+                  <input type="text" placeholder="" required />
+                  <input type="email" placeholder="" required />
                 </div>
               </li>
               <li>
-                <label> Phone number</label>
+                <label> Phone number 01</label>
                 <div class="grid">
-                  <input type="tel" placeholder="Phone" required />
+                  <input type="tel" placeholder="" required />
                   {/* <input type="tel" placeholder="Phone" /> */}
                 </div>
               </li>
