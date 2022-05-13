@@ -47,14 +47,31 @@ export const Carousel2 = () => {
           </div>
           <div className="center">
             <div className="inner-center">
-              <span className="box-text">
+              <div className="box-three-title">
+              <h4>
                 Ut enim ad minima veniam, quis nostrum exercitationem ullam
-              </span>
+              </h4>
 
-              <div className="box"> {data.Details[currImg].Subtitle}</div>
+              {/* <span className="box-text">
+                Ut enim ad minima veniam, quis nostrum exercitationem ullam
+              </span> */}
+</div>
+              <div className="box-three-text">
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                  quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                  consequuntur magni dolores eos qui ratione voluptatem sequi
+                  nesciunt. Neque porro quisquam est, qui dolorem ipsum
+                </p>
+                {/* {data.Details[currImg].Subtitle} */}
+              </div>
 
               <button className="button-title">
-                {data.Details[currImg].Title}
+                {/* {data.Details[currImg].Title} */}
+                Log in
               </button>
             </div>
           </div>

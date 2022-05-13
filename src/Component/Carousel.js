@@ -44,10 +44,20 @@ export const Carousel = () => {
           </div>
           <div className="center">
             <div className="inner-center">
-              <div className="box"> {data.Details[currImg].Subtitle}</div>
-
+              <div className="box-one">
+                {/* {data.Details[currImg].Subtitle} */}
+                <div className="box-one-title">
+                  <h2>Lorem ipsum dolor</h2>
+                </div>
+                <br></br>
+                <div className="box-one-subtitle">
+                  <h4>At vero eos et accusamus et iusto odio</h4>
+                </div>
+              </div>
+              <br></br>
               <button className="button-title">
-                {data.Details[currImg].Title}
+                {/* {data.Details[currImg].Title} */}
+                Contact us
               </button>
             </div>
           </div>
