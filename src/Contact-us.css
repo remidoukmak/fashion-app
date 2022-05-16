@@ -1,13 +1,9 @@
-/* @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
-
-/* RESET RULES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 :root {
   --white: #afafaf;
   --red: #e31b23;
   --bodyColor: white;
   --borderFormEls: hsl(0, 5%, 13%);
-  --bgFormEls: hsl(0, 17%, 91%);
+  --bgFormEls: #f8f8ff;
   --bgFormElsFocus: hsl(0, 10%, 94%);
 }
 
@@ -28,6 +24,7 @@ textarea,
 button {
   font-family: inherit;
   font-size: 100%;
+  border-color: none;
 }
 
 button,
@@ -39,14 +36,10 @@ select {
   appearance: none;
 }
 
-/* Remove native arrow on IE */
 select::-ms-expand {
   display: none;
 }
 
-/*Remove dotted outline from selected option on Firefox*/
-/*https://stackoverflow.com/questions/3773430/remove-outline-from-select-box-in-ff/18853002#18853002*/
-/*We use !important to override the color set for the select on line 99*/
 select:-moz-focusring {
   color: transparent !important;
   text-shadow: 0 0 0 var(--white);
@@ -76,13 +69,24 @@ body {
 
 /* FORM ELEMENTS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.my-form h1 {
-  margin-bottom: 1.5rem;
-  width: 100%;
+
+.float-container {
+  border: 3px solid #fff;
+  padding: 20px;
+}
+
+.my-form {
+  width: 50%;
+  float: left;
+  padding: 20px;
+}
+h1 {
+  width: 50%;
 }
 
 .my-form ul {
   list-style: none;
+  width: 60%;
 }
 
 .my-form li,
@@ -98,22 +102,21 @@ body {
   line-height: 1.5;
   padding: 15px 10px;
   border: 1px solid var(--borderFormEls);
+  border-color: #f8f8ff;
+  border-radius: 4px;
   color: var(--white);
   background: var(--bgFormEls);
+  font-family: inherit;
   transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25),
     transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
 }
 
 .my-form textarea {
   height: 170px;
-  border: 1px solid var(--borderFormEls);
-
-  /* border-radius: 10px; */
 }
 
 .my-form ::placeholder {
   color: inherit;
-  /*Fix opacity issue on Firefox*/
   opacity: 1;
 }
 
@@ -152,6 +155,11 @@ body {
   filter: blur(2px);
 }
 
+.contact-us-intro {
+  width: 80%;
+  margin-left: 20px;
+}
+
 /* FORM BTNS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .my-form .required-msg {
@@ -164,11 +172,13 @@ body {
 .my-form .btn-grid {
   position: relative;
   overflow: hidden;
-  transition: filter 0.2s;
+  margin-bottom: 20px;
 }
 
 .my-form button {
   font-weight: bold;
+  background-color: blue;
+  color: white;
 }
 
 .my-form button > * {
@@ -191,9 +201,21 @@ body {
 
 .my-form button:enabled:hover .front,
 .my-form button:focus .front {
-  transform: translateX(110%);
 }
 
+.add-new-number {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(176, 213, 228);
+  padding: 6px;
+  margin-bottom: 10px;
+  color: darkblue;
+  font-size: 10px;
+}
+
+.add-new-number-2 {
+  margin-bottom: 10px;
+}
 /* CUSTOM CHECKBOX
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .my-form input[type="checkbox"] {
@@ -234,22 +256,6 @@ body {
   border-bottom: 2px solid var(--white);
   border-right: 2px solid var(--white);
   transform: rotate(45deg);
-}
-
-/* FOOTER
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-footer {
-  font-size: 1rem;
-  text-align: right;
-  backface-visibility: hidden;
-}
-
-footer a {
-  text-decoration: none;
-}
-
-footer span {
-  color: var(--red);
 }
 
 /* MQ

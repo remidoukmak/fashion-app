@@ -1,0 +1,70 @@
+.float-container {
+  border: 3px solid #fff;
+  padding: 20px;
+  margin-left: 20px;
+}
+.float-container:after {
+  clear: both;
+}
+.float-container-content {
+  width: 50%;
+  float: left;
+  padding: 20px;
+}
+
+.box-one-title {
+  font-size: 30px;
+  font-weight: none;
+  float: left;
+}
+
+.box-one-subtitle {
+  display: flex;
+  font-size: 20px;
+  float: left;
+  width: 90%;
+}
+
+.box-one::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.button-title {
+  background-color: #0da2ff;
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 15px;
+  color: white;
+  border: none;
+  float: left;
+}
+
+.box-one {
+  inline-size: 300px;
+  overflow-wrap: break-word;
+}
+.button-title {
+  color: #0da2ff;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+  width: 100px;
+}
+
+.box-one {
+  display: block;
+  text-align: justify;
+  margin-left: 2px;
+}
+
+.box-one-button-title {
+  background-color: #0da2ff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  color: white;
+  border: none;
+  float: left;
+  margin-left: 100px;
+}

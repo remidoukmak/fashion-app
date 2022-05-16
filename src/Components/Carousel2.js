@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
-import "./Carousel.css";
-// import { ArrowBackIosIcon } from '@material-ui/icons/ArrowBackIos';
+import "./Carousel2.css";
 import { ArrowBack } from "@material-ui/icons";
 import { ArrowForward } from "@material-ui/icons";
-// import axios from 'axios';
-// import { ArrowForwardIosIcon } from '@material-ui/icons/ArrowForwardIos';
-export const Carousel = () => {
+
+export const Carousel2 = () => {
   const [currImg, setCurrImg] = useState(0);
   const [data, setData] = useState("");
 
@@ -30,7 +28,9 @@ export const Carousel = () => {
       <div className="carousel">
         <div
           className="carouselInner"
-          style={{ backgroundImage: `url(${data.Details[currImg].ImageUrl})` }}
+          style={{
+            backgroundImage: `url("https://interview-assessment.api.avamae.co.uk/Images/swiper_image_3.jpg")`,
+          }}
         >
           <div
             className="left"
@@ -40,25 +40,29 @@ export const Carousel = () => {
               );
             }}
           >
-            <ArrowBack style={{ frontSize: 30 }} />
+            <ArrowBack />
           </div>
           <div className="center">
-            <div className="inner-center">
-              <div className="box-one">
-                {/* {data.Details[currImg].Subtitle} */}
-                <div className="box-one-title">
-                  <h2>Lorem ipsum dolor</h2>
-                </div>
-                <br></br>
-                <div className="box-one-subtitle">
-                  <h4>At vero eos et accusamus et iusto odio</h4>
-                </div>
+            <div className="inner-center2">
+              <div className="box-two-title">
+                <h4>
+                  Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                </h4>
               </div>
-              <br></br>
-              <button className="button-title">
-                {/* {data.Details[currImg].Title} */}
-                Contact us
-              </button>
+              <div className="box-two-text">
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                  quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                  consequuntur magni dolores eos qui ratione voluptatem sequi
+                  nesciunt. Neque porro quisquam est, qui dolorem ipsum
+                </p>
+              </div>
+              <div>
+                <button className="button-carousel2">Log in</button>
+              </div>
             </div>
           </div>
           <div
@@ -67,7 +71,7 @@ export const Carousel = () => {
               setCurrImg((currImg + 1) % data.Details.length);
             }}
           >
-            <ArrowForward style={{ frontSize: 30 }} />
+            <ArrowForward />
           </div>
         </div>
       </div>

@@ -32,6 +32,14 @@
   width: 100px;
   border: white;
 }
+
+.footer-text {
+  font-size: 14px;
+  text-align: right;
+  float: right;
+}
+
+
 @media (min-width: 640px) {
   body {
     font-size: 1rem;

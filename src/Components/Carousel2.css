@@ -1,0 +1,122 @@
+.carousel {
+  width: 100%;
+  height: 450px;
+  justify-content: center;
+  background-repeat: no-repeat;
+}
+.carouselInner {
+  height: 100%;
+  width: 100%;
+  background-position: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  margin-top: 10px;
+  position: center;
+}
+
+.carouselInner .left {
+  flex: 5%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  color: transparent;
+}
+.carouselInner .center {
+  flex: 70%;
+  height: 100%;
+  display: flex;
+  place-items: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  text-align-last: center;
+  float: left;
+}
+.inner-center::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.inner-center2 {
+  font-size: 30px;
+  font-weight: none;
+  background-color: gray;
+  width: 40%;
+  display: grid;
+}
+
+.box {
+  inline-size: 300px;
+  overflow-wrap: break-word;
+}
+.button-carousel2 {
+  display: flex;
+  font-size: 15px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  color: #0da2ff;
+  font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans",
+    sans-serif;
+  line-height: 1.15385;
+  outline: none;
+  padding: 8px 0.8em;
+  position: relative;
+  text-align: center;
+  margin-left: 100px;
+  margin-bottom: 10px;
+  width: 100px;
+}
+
+/* .button-7:hover,
+.button-7:focus {
+  background-color: #07c;
+}
+
+.button-7:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.button-7:active {
+  background-color: #0064bd;
+  box-shadow: none;
+} */
+
+#div-center {
+  float: left;
+}
+h1,
+p {
+  width: 20%;
+  margin-top: 1rem;
+  background-color: #1b7ced;
+  font-size: 13px;
+  padding: 10px;
+}
+.carouselInner .right {
+  flex: 5%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  color: transparent;
+}
+.inner-center {
+  padding: 20px;
+}
+
+.box-two-title {
+  float: left;
+  margin-left: 20px;
+  font-size: 12px;
+  text-align: left;
+}
+
+.box-two-text {
+  inline-size: 150px;
+  overflow-wrap: break-word;
+  background-color: none;
+  float: left;
+  font-size: 20px;
+  margin-left: 10px;
+}

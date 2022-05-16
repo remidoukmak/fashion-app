@@ -14,16 +14,12 @@ export const Navbar = () => {
 
         <ul className="nav-list">
           <li className="list-item">
-            {/* <a href="#home">HOME</a> */}
             <Link to="/">HOME </Link>
           </li>
           <li className="list-item">
-            {/* <a href="#about-us">ABOUT US</a> */}
-
             <Link to="/about-us">ABOUT US </Link>
           </li>
           <li className="list-item">
-            {/* <a href="#contact-us">CONTACT US</a> */}
             <Link to="/contact-us">CONTACT US </Link>
           </li>
           <li className="list-item">

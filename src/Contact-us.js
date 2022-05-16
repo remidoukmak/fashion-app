@@ -1,4 +1,3 @@
-//
 import React, { useState } from "react";
 import "./Contact-us.css";
 
@@ -9,17 +8,19 @@ export const ContactUs = () => {
   return (
     <>
       <div id="items-container">
-        <form class="my-form">
-          <div class="container">
-            <h1>Contact us</h1>
+        <div className="float-container">
+          <h1>Contact us</h1>
+          <form class="my-form">
+            <div className="contact-us-intro">
+              <p>
+                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis
+                et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                fugit, sed quia consequuntur magni dolores eos qui ratione
+              </p>
+            </div>
             <ul>
               <li>
-                {/* <select>
-                <option selected disabled>--Please choose an option--</option>
-                <option>Request Quote</option>
-                <option>Send Resume</option>
-                <option>Other</option>
-              </select> */}
               </li>
               <li>
                 <div className="grid grid-2">
@@ -27,15 +28,14 @@ export const ContactUs = () => {
                   <label>Email address </label>
                 </div>
                 <div class="grid grid-2">
-                  <input type="text" placeholder="" required />
-                  <input type="email" placeholder="" required />
+                  <input type="text" placeholder="" />
+                  <input type="email" placeholder="" />
                 </div>
               </li>
               <li>
                 <label> Phone number 01</label>
                 <div class="grid">
-                  <input type="tel" placeholder="" required />
-                  {/* <input type="tel" placeholder="Phone" /> */}
+                  <input type="tel" placeholder="" />
                 </div>
               </li>
               <label>
@@ -46,7 +46,7 @@ export const ContactUs = () => {
                 />
                 {checked ? (
                   <input
-                    className="inputRequest formContentElement"
+                    className="add-new-number-2"
                     name="Phone  number"
                     type="tel"
                     placeholder="Phone number"
@@ -54,30 +54,16 @@ export const ContactUs = () => {
                 ) : (
                   <div></div>
                 )}
-                <h1 class="front">Add phone Number</h1>
+                <div className="add-new-number">
+                  <h2>Add phone Number</h2>
+                </div>
               </label>
-
-              {/* Inline conditional if checked state is `true` will show the div, otherwise, it won't */}
-
-              {/* <li>
-            <label> Add new number</label>
-              <div class="grid grid-4">
-                <input type="tel" placeholder="phone" required />
-                <input type="tel" placeholder="Phone" />
-                <input type="tel" placeholder="Phone" />
-                <input type="tel" placeholder="Phone" />
-              </div>
-            </li> */}
-
               <li>
                 <textarea placeholder="Message"></textarea>
               </li>
               <li>
                 <input type="checkbox" id="terms" />
-                <label for="terms">
-                  I have read and agreed with{" "}
-                  <a href="">the terms and conditions.</a>
-                </label>
+                <label for="terms">add address details</label>
               </li>
               <li>
                 <div>
@@ -122,29 +108,19 @@ export const ContactUs = () => {
                   </label>
                 </div>
                 <div class="grid">
-                  <div class="required-msg">REQUIRED FIELDS</div>
                   <button class="btn-grid" type="submit">
-                    <span class="back">
-                      <img
-                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/email-icon.svg"
-                        alt=""
-                      />
-                    </span>
                     <span class="front">SUBMIT</span>
                   </button>
-                  {/* <button class="btn-grid" type="reset">
-                  <span class="back">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/eraser-icon.svg" alt="" />
-                  </span>
-                  <span class="front">RESET</span>
-                </button> */}
                 </div>
               </li>
             </ul>
+          </form>
+          <div>
+            <img
+              className="my-form"
+              src="https://www.seekpng.com/png/detail/35-351553_welcome-nucleic-acid-cartoon.png"
+            />
           </div>
-        </form>
-        <div>
-          <img src="https://www.seekpng.com/png/detail/35-351553_welcome-nucleic-acid-cartoon.png" />
         </div>
       </div>
       <footer>
