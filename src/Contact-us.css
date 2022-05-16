@@ -40,7 +40,7 @@ select::-ms-expand {
   display: none;
 }
 
-select:-moz-focusring {
+select:-moz-focusing {
   color: transparent !important;
   text-shadow: 0 0 0 var(--white);
 }
@@ -80,8 +80,8 @@ body {
   float: left;
   padding: 20px;
 }
-h1 {
-  width: 50%;
+.contact-us-title {
+  margin-left: 130px;
 }
 
 .my-form ul {

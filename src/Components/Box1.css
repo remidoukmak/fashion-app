@@ -9,20 +9,7 @@
 .float-container-content {
   width: 50%;
   float: left;
-  padding: 20px;
-}
-
-.box-one-title {
-  font-size: 30px;
-  font-weight: none;
-  float: left;
-}
-
-.box-one-subtitle {
-  display: flex;
-  font-size: 20px;
-  float: left;
-  width: 90%;
+  padding: 70px;
 }
 
 .box-one::after {
@@ -40,22 +27,16 @@
   float: left;
 }
 
-.box-one {
+/* .box-one {
   inline-size: 300px;
   overflow-wrap: break-word;
-}
+} */
 .button-title {
   color: #0da2ff;
   padding: 10px;
   border-radius: 5px;
   background-color: white;
   width: 100px;
-}
-
-.box-one {
-  display: block;
-  text-align: justify;
-  margin-left: 2px;
 }
 
 .box-one-button-title {
@@ -66,5 +47,5 @@
   color: white;
   border: none;
   float: left;
-  margin-left: 100px;
+  margin-left: 110px;
 }

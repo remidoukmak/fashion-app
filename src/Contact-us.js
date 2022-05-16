@@ -9,7 +9,7 @@ export const ContactUs = () => {
     <>
       <div id="items-container">
         <div className="float-container">
-          <h1>Contact us</h1>
+          <h1 className="contact-us-title">Contact us</h1>
           <form class="my-form">
             <div className="contact-us-intro">
               <p>
